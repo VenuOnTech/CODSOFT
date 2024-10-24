@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Creative Landing Page</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1 class="logo">Creative Hub</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#login" class="auth-button login">Login</a>
+                <a href="#signup" class="auth-button signup">Sign Up</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <h2>Discover Your Creative Potential!</h2>
+            <p>Join us for innovative solutions and creative ideas.</p>
+            <br><br><br>
+            <a href="#contact" class="cta-button">Get Started</a>
+            
+            <img src="c:\Users\vdadi\Downloads\DALL·E 2024-10-13 10.51.55 - A modern creative hub landscape-oriented illustration featuring a vibrant workspace. A person is working on a laptop surrounded by colorful creative t.webp" alt="Creative Hub Illustration" class="hero-image">
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about">
+            <p>Welcome to Creative Hub, where innovation meets inspiration! We are a passionate team of creative professionals dedicated to helping individuals and businesses unleash their full potential through creativity and design.</p>
+            <br>
+            <p>At Creative Hub, we believe that creativity is not just a skill; it’s a way of thinking that can be harnessed to solve problems, generate new ideas, and inspire action. Our mission is to provide you with the tools, resources, and support you need to transform your visions into reality.</p>
+            <br>
+            <p>Whether you're an aspiring artist, a budding entrepreneur, or a seasoned professional, we offer a range of services tailored to meet your needs. From stunning graphic design and website development to innovative marketing strategies, our team is here to guide you every step of the way.</p>
+            <br>
+            <p>Join us on this creative journey and discover the endless possibilities that await. Together, let’s create something extraordinary!</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Design</h3>
+                <p>Crafting unique designs tailored to your vision.</p>
+            </div>
+            <div class="service-card">
+                <h3>Development</h3>
+                <p>Building robust applications that bring your ideas to life.</p>
+            </div>
+            <div class="service-card">
+                <h3>Marketing</h3>
+                <p>Strategies to amplify your brand and reach your audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you!</p>
+    </footer>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Sign up for your free account</h2>
+            <p>Store images, connect with clients and creatives, make and sell art prints</p>
+            <form>
+                <input type="text" placeholder="Your First Name" required><br>
+                <input type="text" placeholder="Your Last Name" required><br>
+                <input type="email" placeholder="Your Email" required><br>
+                <button type="submit">Next</button>
+            </form>
+            <p>By clicking this button, you agree to our <a href="#">privacy policy</a> and <a href="#">terms and conditions</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("signupModal");
+        var btn = document.querySelector(".cta-button");
+        var span = document.querySelector(".close-button");
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
